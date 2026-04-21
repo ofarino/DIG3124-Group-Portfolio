@@ -1,0 +1,98 @@
+body{
+  background-color: white;
+  font-family: sans-serif;
+  margin: 0;
+}
+ a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+background-color: rgb(154, 207, 130);
+  color: #85B88B;
+  width: 100%;
+  padding:20px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #d8d8d8;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  color: white;
+}
+
+.name{
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.link{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.background{
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.background h1{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.background h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.market-analysis{
+    color: white;
+    background-color: rgb(154, 207, 130);
+    margin-top: 20px;
+    padding: 20px;
+}
+.market-analysis h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.user-research{
+    margin-top: 20px;
+    padding: 20px;
+}
+.user-research h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.design-process{
+    color: white;
+    background-color: rgb(154, 207, 130);
+    margin-top: 20px;
+    padding: 20px;
+}
+.design-process h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.final-prototype{
+    margin-top: 20px;
+    padding: 20px;
+}
+.final-prototype h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.reflection{
+    background-color: rgb(154, 207, 130);
+    color: white;
+    margin-top: 20px;
+    padding: 20px;
+}
+.reflection h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
