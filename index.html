@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="site-nav">
     <div class="name">
         <strong>Chomp Clock</strong>
         </div>
 
-    <div class="link">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="link" id="site-links">
           <span class="menu"><a href="#background">Background </a></span>
           <span class="menu"><a href="#market-analysis">Market Analysis </a></span>
           <span class="menu"><a href="#user-research">User Research </a></span>
