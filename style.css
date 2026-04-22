@@ -154,6 +154,40 @@ background-color: rgb(154, 207, 130);
   font-style: italic;
 }
 
+.journey-map-img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  cursor: zoom-in;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.6);
+}
+
 @media (max-width: 900px) {
   .background {
     min-height: auto;
