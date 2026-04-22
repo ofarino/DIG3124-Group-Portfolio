@@ -149,8 +149,9 @@ background-color: rgb(154, 207, 130);
   font-size: 18px;
  }
 
-.kalam-text {
+.kalamfont {
   font-family: 'Kalam', cursive;
+  font-style: italic;
 }
 
 @media (max-width: 900px) {
