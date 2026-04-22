@@ -145,18 +145,20 @@ background-color: rgb(154, 207, 130);
   max-width: 60%;
 }
 
+.project-background p { 
+  font-size: 18px;
+ }
+
+.kalam-text {
+  font-family: 'Kalam', cursive;
+}
+
 @media (max-width: 900px) {
   .background {
     min-height: auto;
     padding-bottom: 20px;
   }
 
-  .background .chompgator {
-    position: static;
-    display: block;
-    width: min(100%, 420px);
-    margin: 0 auto 16px;
-  }
 
   .background h1,
   .background h2,
