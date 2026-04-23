@@ -1,17 +1,24 @@
-const lightboxTrigger = document.querySelector('.lightbox-trigger');
-const lightboxOverlay = document.getElementById('journeyLightbox');
+function setupLightbox(triggerSelector, overlayId) {
+	const trigger = document.querySelector(triggerSelector);
+	const overlay = document.getElementById(overlayId);
 
-if (lightboxTrigger && lightboxOverlay) {
-  lightboxTrigger.addEventListener('click', () => {
-    lightboxOverlay.classList.add('active');
-  });
-  lightboxOverlay.addEventListener('click', () => {
-    lightboxOverlay.classList.remove('active');
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') lightboxOverlay.classList.remove('active');
-  });
+	if (!trigger || !overlay) return;
+
+	trigger.addEventListener('click', () => {
+		overlay.classList.add('active');
+	});
+
+	overlay.addEventListener('click', () => {
+		overlay.classList.remove('active');
+	});
+
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape') overlay.classList.remove('active');
+	});
 }
+
+setupLightbox('.lightbox-trigger', 'journeyLightbox');
+setupLightbox('.wireframe-trigger', 'wireframeLightbox');
 
 const nav = document.querySelector('.site-nav');
 const navToggle = document.querySelector('.nav-toggle');
