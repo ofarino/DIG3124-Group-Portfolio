@@ -23,7 +23,7 @@ nav{
   background-color: rgba(255, 255, 255, 0.911);
   width: 100%;
   padding:20px 20px;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #d8d8d8;
@@ -69,12 +69,12 @@ nav{
   width: 24px;
   height: 3px;
   margin: 4px 0;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: 999px;
 }
 
 .hero{
-  margin-top: 40px;
+  margin-top: 0;
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -141,6 +141,24 @@ nav{
 .user-research h2{
     font-size: 28px;
     margin-bottom: 10px;
+}
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 12px 0 24px;
+}
+
+.persona-card {
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 14px;
+  background-color: #ffffff;
+}
+
+.persona-card h4 {
+  margin-top: 0;
 }
 .design-process{
     color: white;
@@ -283,5 +301,9 @@ nav{
 
   .background {
     margin-top: 40px;
+  }
+
+  .persona-grid {
+    grid-template-columns: 1fr;
   }
 }
