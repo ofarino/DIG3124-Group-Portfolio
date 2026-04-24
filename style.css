@@ -88,6 +88,7 @@ nav{
 
 .hero{
   margin-top: 0px;
+  margin-bottom: 20px;
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -145,20 +146,53 @@ nav{
 .background .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
 }
-.market-analysis{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 252, 252);
-    margin-top: 20px;
-    padding: 20px;
-    padding-top: 60px;
+.market-analysis {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  background-color: white;
+  margin-top: 20px;
+  padding: 60px 70px;
 }
-.market-analysis h2{
-    color: var(--text-green);
-    font-size: 30px;
-    margin-bottom: 10px;
+
+.stakeholder-map {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 48% 42%;
+  gap: 70px;
+  align-items: center;
 }
+
+.stakeholder-map img {
+  width: 100%;
+  max-width: 620px;
+  display: block;
+}
+
+.stakeholder-text {
+  max-width: 560px;
+}
+
+.market-analysis h2 {
+  color: var(--text-green);
+  font-size: 32px;
+  text-align: center;
+}
+
+.stakeholder-text h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin: 0 0 15px 0;
+}
+
+.stakeholder-text p {
+  font-size: 22px;
+  line-height: 1.55;
+  margin: 0;
+}
+
 .user-research{
     margin-top: 20px;
     padding: 20px;
@@ -201,7 +235,7 @@ nav{
 .design-process{
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 252, 252);
+    background-color: rgb(255, 255, 255);
     margin-top: 20px;
     padding: 20px;
     padding-top: 60px;
@@ -224,7 +258,7 @@ nav{
 .reflection{
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 252, 252);
+    background-color: rgb(255, 255, 255);
     margin-top: 20px;
     padding: 20px;
     padding-top: 60px;
@@ -347,3 +381,14 @@ nav{
     grid-template-columns: 1fr;
   }
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
