@@ -316,10 +316,25 @@ nav{
 }
 
 .final-prototype{
-    margin-top: 20px;
-    padding: 20px;
-    padding-top: 60px;
+  padding: 60px 20px;
+  text-align: center;
 }
+
+.prototype-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.prototype-container iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+  display: block;
+}
+
 .final-prototype h2{
     font-size: 30px;
     margin-bottom: 10px;
